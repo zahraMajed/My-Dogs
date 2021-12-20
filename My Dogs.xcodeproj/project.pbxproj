@@ -14,6 +14,10 @@
 		84FD4BFB276E29850071B3E7 /* My_Dogs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4BF9276E29850071B3E7 /* My_Dogs.xcdatamodeld */; };
 		84FD4BFD276E29860071B3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD4BFC276E29860071B3E7 /* Assets.xcassets */; };
 		84FD4C00276E29860071B3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD4BFE276E29860071B3E7 /* LaunchScreen.storyboard */; };
+		84FD4C09276E349C0071B3E7 /* ColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C07276E349C0071B3E7 /* ColViewCell.swift */; };
+		84FD4C0C276F9F790071B3E7 /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C0B276F9F790071B3E7 /* AddDogViewController.swift */; };
+		84FD4C0E276FA15C0071B3E7 /* dogsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C0D276FA15C0071B3E7 /* dogsDelegates.swift */; };
+		84FD4C10276FB3AC0071B3E7 /* EditDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C0F276FB3AC0071B3E7 /* EditDogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		84FD4BFC276E29860071B3E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FD4BFF276E29860071B3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FD4C01276E29860071B3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FD4C07276E349C0071B3E7 /* ColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColViewCell.swift; sourceTree = "<group>"; };
+		84FD4C0B276F9F790071B3E7 /* AddDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewController.swift; sourceTree = "<group>"; };
+		84FD4C0D276FA15C0071B3E7 /* dogsDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dogsDelegates.swift; sourceTree = "<group>"; };
+		84FD4C0F276FB3AC0071B3E7 /* EditDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				84FD4BF2276E29850071B3E7 /* SceneDelegate.swift */,
 				84FD4BF4276E29850071B3E7 /* ViewController.swift */,
 				84FD4BF6276E29850071B3E7 /* Main.storyboard */,
+				84FD4C0F276FB3AC0071B3E7 /* EditDogViewController.swift */,
+				84FD4C0B276F9F790071B3E7 /* AddDogViewController.swift */,
+				84FD4C0D276FA15C0071B3E7 /* dogsDelegates.swift */,
+				84FD4C07276E349C0071B3E7 /* ColViewCell.swift */,
 				84FD4BFC276E29860071B3E7 /* Assets.xcassets */,
 				84FD4BFE276E29860071B3E7 /* LaunchScreen.storyboard */,
 				84FD4C01276E29860071B3E7 /* Info.plist */,
@@ -143,8 +155,12 @@
 			files = (
 				84FD4BF5276E29850071B3E7 /* ViewController.swift in Sources */,
 				84FD4BF1276E29850071B3E7 /* AppDelegate.swift in Sources */,
+				84FD4C0E276FA15C0071B3E7 /* dogsDelegates.swift in Sources */,
 				84FD4BFB276E29850071B3E7 /* My_Dogs.xcdatamodeld in Sources */,
+				84FD4C09276E349C0071B3E7 /* ColViewCell.swift in Sources */,
+				84FD4C10276FB3AC0071B3E7 /* EditDogViewController.swift in Sources */,
 				84FD4BF3276E29850071B3E7 /* SceneDelegate.swift in Sources */,
+				84FD4C0C276F9F790071B3E7 /* AddDogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +314,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,6 +342,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
